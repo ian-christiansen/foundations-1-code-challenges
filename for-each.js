@@ -46,6 +46,11 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    const petsSpanish = [];
+    arr.forEach((key) => petsSpanish.push({
+        nombre: `${key.name}`,
+        tipo: `${key.type}`,
+    })
+    );
+    return petsSpanish;
 }
-
