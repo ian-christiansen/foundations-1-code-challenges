@@ -68,7 +68,11 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    const petString = [];
+    arr.map(element => {
+        petString.push(element.name + element.type);
+    });
+    return petString;
 }
 
 /*
